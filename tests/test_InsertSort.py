@@ -30,3 +30,11 @@ def test_Nearly_sorted():
     actual = insertionSort(arr)
     assert expected == actual
 
+
+
+#Invalid Input
+def test_Invalid_Input():
+    arr = ["Ali","Ahmed",15,10]
+    with pytest.raises(Exception):
+        insertionSort(arr)
+
