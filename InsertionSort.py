@@ -12,21 +12,11 @@ def insertionSort(arr):
 		# of their current position
         j = i-1
         while j >=0 and key < arr[j] :
-            print (f'j={j}')
-            print(f'key={key}')
-            print(f'arr[j]= {arr[j]}')
             arr[j+1] = arr[j]
             j -= 1
         arr[j+1] = key
+    return arr
 
 
-# Driver code to test above
-arr = [8,4,23,42,16,15]
-print ("Sorted array is:")
-for i in range(len(arr)):
-	print ("%d" %arr[i])
-
-# This code is contributed by Mohit Kumra
-
-
-insertionSort(arr)
+arr = [2,3,5,7,13,11]
+print(insertionSort(arr))
